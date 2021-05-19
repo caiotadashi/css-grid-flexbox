@@ -7,7 +7,13 @@ body, ul, li, p {
 }  
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+
 }
 
 .header{
@@ -19,15 +25,15 @@ a {
     padding: 20px;
 }
 
-.menu {
+.nav {
     display: flex;
 }
 
-.menu li {
+.nav li {
     margin-left: 10px;
 }
 
-.menu li a {
+.nav li a {
     display: block;
     padding: 10px;
 }
