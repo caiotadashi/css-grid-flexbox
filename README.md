@@ -1,3 +1,3 @@
 # css-grid-flexbox
 
-Some CSS Grid and Flexbox exercises
+Some CSS Grid and Flexbox coding practice.
