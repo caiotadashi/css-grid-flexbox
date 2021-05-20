@@ -21,6 +21,11 @@ h1 {
     margin-top: 100px;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header{
     background: #1d1e20;
     display: flex;
@@ -41,4 +46,21 @@ h1 {
 .nav li a {
     display: block;
     padding: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+figcaption {
+    color: black;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.flex > div {
+    flex: 1 1 200px;
 }
