@@ -1,0 +1,94 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial;
+}  
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    max-width: 100%;
+}
+
+figcaption {
+    color: black;
+}
+
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    margin-left: 10px;
+}
+
+.nav li a {
+    display: block;
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grid > div:nth-child(n+4) > figure > a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.ad {
+    grid-column: 1;
+    grid-row: 2/5;
+}
+
+.grid > .ad > figure {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid > div:nth-child(n+4) > figure > a {
+        display: block;
+    }
+
+    .ad {
+        grid-row: 2/4;
+    }
+}
